@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <input type="text" id="a">
+ <input type="text" id="b">
+<button onclick="laydulieu()" >nhập</button>
+<script>
+    function laydulieu(){
+        let abc= document.getElementById("a").value;
+        let cde= document.getElementById("b").value;
+        console.log(abc)
+        console.log(cde)
+
+        abc= Number(abc)
+        cde= Number(cde)
+
+        let sum= abc + cde
+        alert(sum)
+    }
+
+</script>
+</body>
+</html>

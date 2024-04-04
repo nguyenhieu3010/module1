@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sắp xếp ảnh</title>
+</head>
+<body>
+<img src="anh/anh1.1.jpg" height="150" width="750" id="anh1" onclick="layAnh()"/>
+<br>
+<img src="anh/anh1.2.jpg" height="150" width="750" id="anh2" onclick="duAnh()"/>
+<br>
+<img src="anh/anh1.3.jpg" height="150" width="750" id="anh3" onclick="anAnh()"/>
+<script>
+    let a = 1;
+    function layAnh(){
+        if(a ==1){
+            a = 2
+        }else {
+            a = 1
+        }
+        document.getElementById("anh1").src="anh/anh"+a+".1.jpg"
+        if (a == b && a == c) {
+            alert("anh đúng")
+        }
+    }
+    let b=1
+    function duAnh(){
+        if(b==1){
+            b=2
+        }else {
+            b = 1
+        }
+        document.getElementById("anh2").src= "anh/anh" + b + ".2.jpg"
+        if ( a == b && a == c ) {
+            alert("anh đúng")
+        }
+    }
+    let c=1
+    function anAnh(){
+        if(c==1){
+            c=2
+        }else {
+            c=1
+        }
+        document.getElementById("anh3").src="anh/anh"+ c +".3.jpg"
+        if ( a == b && a == c) {
+            alert("anh đúng")
+        }
+
+    }
+
+</script>
+
+</body>
+</html>

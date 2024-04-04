@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Cho danh sách các điểm thi ở trong một mảng. Hãy viết hàm-->
+<!--findAvg() với đầu vào là một mảng điểm và đầu ra là điểm trung-->
+<!--bình của danh sách điểm thi. (không dùng hàm có sẵn để tính)-->
+<script>
+    function findAvg(numbers) {
+        let sum = 0
+        for (let i = 0; i < numbers.length; i++) {
+            sum += numbers[i]
+
+        }
+        let Tb = sum / numbers.length
+        return Tb
+    }
+
+    console.log(findAvg([3, 5, 6, 7]))
+</script>
+</body>
+
+</html>

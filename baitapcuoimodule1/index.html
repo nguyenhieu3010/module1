@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập</title>
+</head>
+<body>
+
+<!--Cho danh sách các điểm thi ở trong một mảng-->
+<!--Hãy viết hàm tìm được điểm thi cao thứ 3 với đầu vào là một mảng điểm.-->
+<!--(không dùng hàm có sẵn để sắp xếp).-->
+<!--Khai báo được hàm, bao gồm cả tham số-->
+<!--Dùng vòng lặp để duyệt được mảng-->
+<!--Tìm được giá trị điểm cao thứ 3-->
+<!--Viết mã sạch-->
+<script>
+    function soSanh(number) {
+        let min=[]
+        let max1=0;
+        let max2=0;
+        let max3=0
+        for (let i = 0; i < number.length; i++) {
+            if(number[i]<min){
+                min=number[i]
+            }
+        }
+        min=max1
+        min=max2
+        min=max3
+        for (let i = 0; i < number.length; i++) {
+            if (number[i] > max1) {
+                max3 = max2
+                max2 = max1
+                max1 = number[i]
+            }
+            if (number[i] > max2 && number[i] < max1) {
+                max3 = max2
+                max2 = number[i]
+            }
+            if (number[i] > max3 && number[i] < max2) {
+                max3 = number[i]
+            }
+        }
+        return max3
+    }
+    console.log(soSanh([1,2,3,4]))
+
+</script>
+
+
+</body>
+</html>

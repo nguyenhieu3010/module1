@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập cấu trúc điều kiện 02</title>
+</head>
+<style>
+    div {
+        margin: 20% 50%;
+        width: 20%;
+    }
+</style>
+<body>
+<div><h1>You must love me</h1>
+    <button onclick="yes()">yes</button>
+    <button onmouseover="no()" style="position: relative" id="no">no</button>
+</div>
+
+<script>
+    function yes() {
+        alert("xin chao . Đồ quỷ xu")
+    }
+    function no(){
+        document.getElementById("no").style.top=Math.random()*window.innerHeight+'px'
+        document.getElementById("no").style.left=Math.random()*window.innerWidth+'px'
+    }
+    // let a = +prompt( 'độ C')
+    // let F= a * 9/5 + 32
+    // alert(F)
+    // giai phương trình bậc nhất a*x+b=0
+    //     let a = +prompt("số thứ nhất")
+    //     let b = +prompt("số thứ hai")
+    //     if (a>0 && b>0){
+    //             alert("phương trình vo so nghiem")
+    //         }
+    //      else if (a==0 && b!=0) {
+    //         alert("phuong trinh vo nghiem")
+    // } if (a!=0){
+    //         let x=-b/a
+    //     alert(x)
+    // }
+    // giai phuong trinh bậc hai
+    // let a = prompt('nhap so thu nhat')
+    // let b= prompt('nhap so thu hai')
+    // let c = prompt('so thu ba')
+    //
+    //     dt = b*b - 4*a*c;
+    //     if(dt < 0) {
+    //         alert('Phuong trinh vo nghiem')
+    //     } else if(dt == 0) {
+    //         x = -b/(2*a)
+    //         alert('Nghiem phuong trinh x1 = x2 = ' + x)
+    //     } else {
+    //         x1 = (-b + Math.sqrt(dt))/(2*a)
+    //         x2 = (-b - Math.sqrt(dt))/(2*a)
+    //         alert(`Nghiem x1 = ${x1}, x2 = ${x2}`)
+    //     }
+
+
+</script>
+
+</body>
+</html>

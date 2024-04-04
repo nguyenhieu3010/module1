@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--// Viết hàm tryRemoveFromArray() nhận vào tham số là một mảng và một số nguyên index,-->
+<!--//     trả về mảng ban đầu đã được loại bỏ phần tử tại vị trí index nếu index hợp lệ.-->
+<!--//     Nếu index không hợp lệ, trả về mảng ban đầu.-->
+<!--// (không dùng hàm có sẵn để xóa mảng)-->
+<body>
+<script>
+    function soSanh(number, index) {
+        let status = []
+        if (index < 0 || index > number.length) {
+            return number
+        }
+        for (let i = 0; i < number.length; i++) {
+            if (i != index)
+                status[status.length] = number[i]
+        }
+        return status
+    }
+
+    console.log(soSanh([1, 2, 3, 4, 5], 2))
+</script>
+</body>
+</html>

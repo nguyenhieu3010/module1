@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quản ly </title>
+</head>
+<body>
+<h2>
+    Add New Product
+</h2>
+<br>
+<input type="text" style="width: 300px" id="quanLi">
+<button onclick="layDulieu()">add</button>
+<br>
+<h2 id="jjj">
+    Display All Product
+</h2>
+<h3>
+    Product Name
+</h3>
+<table id="abc">
+
+</table>
+<script>
+    let list = ['nokia567', 'hhhhh', 'kkkkk','kjjkkjk','kkkk', 'm1', 'ygygygyg']
+
+
+    function hienThi(){
+        for (i=0;i< list.length;i++){
+            document.getElementById("abc").innerHTML += "<tr><td>" + list[i] + "</td><td><button>edit</button></td><td><button onclick='xoa()'>delete</button></td></tr>"
+    }
+    }
+
+    function layDulieu() {
+        let dulieu= document.getElementById("quanLi").value
+        document.getElementById("abc").innerHTML =" "
+        list.push(dulieu)
+        hienThi()
+
+    }
+    function xoa(a){
+        document.getElementById("abc").innerHTML =" "
+        list.splice(a,1);
+        hienThi()
+    }
+
+
+
+</script>
+</body>
+</html>

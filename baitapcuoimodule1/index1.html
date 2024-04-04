@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>canvas</title>
+</head>
+<body>
+<canvas id="myCanvas" ></canvas>
+<script>
+    // Hãy viết một chương trình để biểu diễn hình chữ nhật, với mô tả của lớp hình chữ nhật như sau:
+    //     Rectangle: Tên lớp
+    // -	x: Toạ độ x
+    // -	y: Toạ độ y
+    // -	width: Chiều rộng
+    // -	height: Chiều cao
+    // -	color: Màu sắc (sử dụng mã màu hex)
+    // +	render(canvas): Hiển thị hình chữ nhật trên một canvas
+    // Hãy thực hiện các thao tác theo kịch bản sau:
+    //     - Tạo một hình chữ nhật có tọa độ 10,10 và kích thước rộng 200, cao 100, màu
+    // - Hiển thị hình chữ nhật trên một canvas bằng cách sử dụng phương thức render
+
+
+
+    // hình chữ nhật , hình vuông
+    // class Rectangle {
+    //     constructor(x, y, width, height, color) {
+    //         this.x = x
+    //         this.y = y
+    //         this.width = width
+    //         this.height = height
+    //         this.color = color
+    //     }
+    //
+    //     render(canvas) {
+    //         let ctx = canvas.getContext("2d")
+    //         ctx.fillStyle = this.color;
+    //         ctx.fillRect(this.x, this.y, this.width, this.height);
+    //     }
+    //
+    // }
+    //
+    // let tangle = new Rectangle(50, 30, 200, 100, "#000000")
+    // let c = document.getElementById("myCanvas")
+    // tangle.render(c)
+
+
+
+    // hình tròn
+    // class Circle{
+    //     constructor(x,y,r) {
+    //         this.x=x;
+    //         this.y=y;
+    //         this.r=r;
+    //         this.start=0;
+    //         this.stop=2*Math.PI;
+    //     }
+    //     render(canvas){
+    //         let ctx=canvas.getContext("2d")
+    //         ctx.beginPath();
+    //         ctx.arc(this.x,this.y,this.r,this.start,this.stop);
+    //         ctx.stroke();
+    //     }
+    // }
+    //     let circle= new Circle(95,50,45,0,2*Math.PI)
+    // let d=document.getElementById("myCanvas")
+    //         circle.render(d)
+
+
+    //đường thẳng
+    class Line{
+        constructor(x,y,x1,y1) {
+            this.x=x;
+            this.y=y;
+            this.x1=x1;
+            this.y1=y1
+        }
+        render(canvas){
+            let ctx=canvas.getContext("2d")
+            ctx.moveTo(this.x,this.y);
+            ctx.lineTo(this.x1,this.y1);
+            ctx.stroke();
+        }
+    }
+    let line=new Line(0,0,300,150)
+    let c=document.getElementById("myCanvas")
+    line.render(c)
+
+</script>
+</body>
+</html>

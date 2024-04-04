@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyện tập mảng 01</title>
+</head>
+<body>
+<!--bài tập 01-->\
+
+<script>
+    // let numbers = [1, 5, 8, 10,18, 20, 5, 2, 9, 2]
+    // for (i = 0; i < numbers.length; i++) {
+    //     if (numbers[i] >= 10) {
+    //         console.log(numbers[i])
+    //     }
+    // }
+    // bài tập 2
+    // let numbers = [1, 5, 8, 10,18, 20, 5, 2, 9, 2]
+    // let max = numbers[0]
+    // let con= 0
+    //  for (i = 0; i < numbers.length; i++) {
+    //      if (numbers[i] > max){
+    //          max = numbers[i]
+    //          con = i
+    //      }
+    //  } console.log(con)
+    //  console.log(max)
+    // bài tập 3
+    //     let numbers = [1,2,1,2,1,2,1,2,1,2]
+    //     let max = numbers[0]
+    //     let sum = 0
+    //      for (i = 0; i < numbers.length; i++) {
+    //          if (numbers[i] > max){
+    //              max = numbers[i]
+    //          }
+    //          sum += numbers[i]
+    //      }
+    //      let tb=sum/numbers.length
+    //      console.log(max)
+    //     console.log(tb)
+    // bài tâp 4
+    // let a = +prompt("nhập số lượng phần tử muốn nhập:")
+    // let numbers=[]
+    // console.log(a)
+    // for(i=0;i<a;i++){
+    //     let sonhapvao= +prompt(i)
+    //     numbers.push(sonhapvao)
+    // }
+    // console.log (numbers)
+    // let sodau= 0
+    // let socuoi= numbers.length -1
+    // while (sodau<socuoi){
+    //     let b = numbers[sodau]
+    //     numbers[sodau]=numbers[socuoi]
+    //     numbers[socuoi]= b
+    //     sodau++
+    //     socuoi--
+    // }
+    // console.log(numbers)
+    // bai tập 5
+    //
+    let a = []
+    for (let i = 0; i < 5; i++) {
+        let number = +prompt("nhap so:")
+        a.push(number)
+    }
+    console.log(a)
+    let V = +prompt("nhap vao")
+    let index = -1
+    for (i=0;i<a.length;i++){
+        if(V==a[i]){
+            index=i
+            break
+        }
+    }
+    for (i=index;i<a.length-1;i++){
+        a[i]=a[i+1]
+    }
+    a[a.length-1]=0
+    console.log(a)
+    //
+
+    // bài tập 6 tìm 2 số lớn nhất
+    // let numbers = [9, 1, 2, 5, 8]
+    // let max1;
+    // let max2;
+    // let max3;
+    // let min = numbers[0]
+    // for (i = 0; i < numbers.length; i++) {
+    //     if (min > numbers[i]) {
+    //         min = numbers[i]
+    //     }
+    // }
+    // max1 = min
+    // max2 = min
+    // max3 = min
+    // for (i = 0; i < numbers.length; i++) {
+    //     if (numbers[i] > max1) {
+    //         max2 = max1
+    //         max1 = numbers[i]
+    //     }
+    //     if (numbers[i] > max2 && max1 > numbers[i]) {
+    //         max3 = max2
+    //         max2 = numbers[i]
+    //     }
+    //     if (numbers[i] > max3 && max2 > numbers[i]) {
+    //         max3 = numbers[i]
+    //     }
+    // }
+    // console.log("so lơn nhat:" + max1)
+    // console.log("so lon thu hai :" + max2)
+    // console.log("số lớn thứ ba: " + max3)
+</script>
+</body>
+</html>

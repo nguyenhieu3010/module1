@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bảng cửu chương</title>
+</head>
+<body>
+<script>
+    // bai tâp 1
+    // for ( i = 1; i < 100 ; i++){
+    //     document.write("số" +i + "<br>" )
+    //     if( i==99){
+    //         alert("hoàn thành")
+    //         continue
+    // }
+    // }
+    // bài tập 2
+    //    let  nhietdo= Number(prompt("nhap so thu nhat"))
+    //    while (nhietdo < 20 || nhietdo > 100 ){
+    //        if( nhietdo <20){
+    //            alert("yêu cầu ngươời dùng tăng nhiet độ")
+    //            let  nhietdo= Number(prompt("nhap so thu nhat"))
+    //        }else if ( nhietdo > 100){
+    //            alert(" yêu cầu người dúng giảm nhiêt độ")
+    //            let  nhietdo= Number(prompt("nhap so thu nhat"))
+    //        }
+    // }
+    // bài tập 3 4
+    //     let a =0 ;a1=0; a2=0
+    //     let  tong=""
+    //     for (i=1;i<=20;i++){
+    //         if (i<=1){
+    //             a=1 ; a1=1
+    //         }else {
+    //             a2 = a + a1
+    //             a = a1;
+    //             a1 = a2
+    //             tong + = a2
+    //             if (i % 5 == 0) {
+    //                 document.write(i)
+    //                 break
+    //             }
+    //             document.write(i + "=" + a2 + "<br>")
+    //             }
+
+
+    // bai tập 5
+    let count = 0, tong = 0
+    let dayso = ""
+    for (let i = 1; ; i++) {
+        if (i % 7 == 0) {
+            dayso += i + " "
+            console.log(dayso)
+            tong += i
+            count++
+            if (count == 30) break
+        }
+    }
+    document.write(dayso + "<br>")
+    document.write("Tổng bằng " + tong)
+    //  bài tap6
+    //     let a= +prompt("nhap so")
+    //  for ( let i=0 ; i<100 ;i++) {
+    //         if(i % 3 ==0){
+    //             alert("in ra brizz")
+    //             let a= +prompt("nhap so")
+    //         }else if (i % 5 == 0){
+    //             alert("in ra buss")
+    //             let a= +prompt("nhap so")
+    //         }else {
+    //             alert("in ra brizzbuss")
+    //             let a = +prompt("nhap so")
+    //         }
+    //     }
+</script>
+</body>
+</html>

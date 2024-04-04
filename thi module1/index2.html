@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Viết hàm sumOfListPrime() nhận vào một số nguyên x , hàm trả-->
+<!--về giá trị là tổng các số nguyên tố từ 0 cho tới x.-->
+
+<script>
+    function isPrime(value) {
+        if (value < 2) {
+            return false
+        }
+        for (let i = 2; i < value; i++) {
+            if (value % i === 0) {
+                return false
+            }
+        }
+        return true;
+    }
+    function sumOfListPrime(x) {
+        let sum = 0;
+        for (let i = 0; i <= x; i++) {
+            if (isPrime(i)) {
+                sum += i;
+            }
+        }
+        return sum;
+    }
+    console.log(sumOfListPrime(3));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Hãy viết một chương trình để biểu diễn hình tròn, với mô tả-->
+<!--của lớp hình tròn như sau:-->
+<!--Circle:Tênlớp-->
+<!-- -x:Toạđộx35-->
+<!-- -y:Toạđộy-->
+<!-- -radius:Bánkính-->
+<!-- -color:Màusắc(sửdụngmãmàuhex)-->
+<!--+render(canvas):Hiểnthịhìnhtròntrênmộtcanvas-->
+<canvas id="myCanvas"></canvas>
+<script>
+    class Circle {
+        constructor(x, y, radius, color) {
+            this.x = x;
+            this.y = y;
+            this.radius = radius;
+            this.color = color
+            this.strar = 0
+            this.stop = 2 * Math.PI
+        }
+
+        render(canvas) {
+            let ctx = canvas.getContext("2d")
+            ctx.fillStyle = this.color;
+            ctx.beginPath()
+            ctx.arc(this.x, this.y, this.radius, this.strar, this.stop)
+            ctx.fill();
+        }
+
+    }
+
+    let circle = new Circle(50, 50, 80,' #000000')
+    let c = document.getElementById("myCanvas")
+    circle.render(c)
+</script>
+
+</body>
+</html>

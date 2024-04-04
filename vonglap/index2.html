@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>làm bảng cửu chương</title>
+</head>
+<body>
+<table id = "number" border="0" ></table>
+<table id = "number2" border="0" ></table>
+<script>
+    // let html = ""
+    // for (let i = 1; i <= 5; i++) {
+    //     for (let j = 1; j <=i;j++) {
+    //         // html += "<td>" + j + "x" + i + "=" + i * j + "</td>"
+    //         html += '*'
+    //     }
+    //    html+="</br>"
+    // }
+    // document.getElementById(" number").innerHTML = html;
+
+    let html = ""
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <=6-i;j++) {
+            // html += "<td>" + j + "x" + i + "=" + i * j + "</td>"
+            html += '*'
+        }
+        html+="</br>"
+    }
+    document.getElementById("number2").innerHTML = html
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lí thuyết</title>
+</head>
+<body>
+<script>
+    // tao một lớp cat có name,mÀU LONG,GIỌNG VÀ HÀNH ĐỌNG , KÊU
+    // tạo một đối tượng mèo cụ thể nhờ lớp trên
+    class Cat {
+        name;
+        mauLong;
+        giong;
+
+        constructor(nameinput, mauLonginput, gionginput) {
+            this.name = nameinput
+            this.mauLong = mauLonginput
+            this.giong = gionginput
+        }
+
+        hanhDong() {
+            console.log("chạy nhanh")
+        }
+
+        keu() {
+            console.log("meo meo")
+        }
+
+    }
+
+    let meo = new Cat("phúc", "trắng tinh", "ai cập nhập nguyen")
+    console.log(meo.name)
+    meo.hanhDong()
+    meo.keu()
+</script>
+</body>
+</html>

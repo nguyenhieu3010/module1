@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tim so nho nhat</title>
+</head>
+<body>
+<script>
+    let numbers = [3,3, 8, 9, 20, 56, 89]
+
+    function soSanh(a) {
+        let min1 = Number.MAX_SAFE_INTEGER
+        let min2 = Number.MAX_SAFE_INTEGER
+        for (i = 0; i < a.length; i++) {
+            if (a[i] < min1) {
+                min2 = min1
+                min1 = a[i]
+            }
+            if (a[i] > min1 && a[i] < min2){
+                min2 = a[i]
+            }
+        }
+        return min2
+
+    }
+
+    console.log(soSanh(numbers))
+</script>
+</body>
+</html>

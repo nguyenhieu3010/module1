@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài ôn tập 2</title>
+</head>
+<body>
+<table id="number2" border="0"></table>
+<script>
+    // bài tập 1
+    // let tong = 1
+    // for (i = 1; i <= 4; i++) {
+    //     tong *= i
+    // }
+    // alert(tong)
+    // bài tâp2
+
+    // let html = ""
+    // for (let i = 1; i <= 5; i++) {
+    //     for (let j = 1; j <=6-i;j++) {
+    //         // html += "<td>" + j + "x" + i + "=" + i * j + "</td>"
+    //         html += '&ensp;'
+    //     }
+    //     for (let k = 1; k <=i;k++) {
+    //         // html += "<td>" + j + "x" + i + "=" + i * j + "</td>"
+    //         html += '*'
+    //     }
+    //     html+="</br>"
+    // }
+    // document.getElementById("number2").innerHTML = html
+
+    let html = ""
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <=5;j++) {
+            if (j<=5-i){
+                html += '&ensp;'
+            }else {
+                html += '*'
+            }
+        }
+        html+="</br>"
+    }
+    document.getElementById("number2").innerHTML = html
+
+
+// let i=0
+//     for (;;){
+//         console.log(i)
+//         i++
+//         if(i>=10){
+//             break;
+//         }
+//     }
+
+
+
+
+
+
+</script>
+</body>
+</html>

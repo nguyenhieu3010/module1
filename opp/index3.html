@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập trên slack</title>
+</head>
+<body>
+<!--2. Hoàn thành bài tập: Viết một lớp các đối tượng hình chữ nhật-->
+<!--lấy tên là Rectangle, mỗi hình chữ nhật đều có những đặc tính sau:-->
+<!--+ Có thông số chiều dài (int).-->
+<!--+ Có thông số chiều rộng (int).-->
+<!--+ Có tính năng tính diện tích.-->
+<!--+ Có tính năng tính chu vi.-->
+<!--=> Tạo một đối tượng HCN-->
+<!--+ Hiển thị thông tin hình chữ nhât lên web-->
+<!--+ Thay đổi chiều dài và chiều rộng của hình chữ nhật-->
+<!--+  In ra màn hình diện tích và chu vi của hình chữ nhật đó.-->
+<script>
+    class Rectangle {
+        chieuDai;
+        chieuRong
+        constructor( chieuDaiinput, chieuRonginput) {
+            this.chieuDai = chieuDaiinput
+            this.chieuRong = chieuRonginput
+        }
+        dienTich() {
+            let S = this.chieuDai * this.chieuRong
+            return S
+        }
+        chuVi() {
+            let V = (this.chieuDai + this.chieuRong) * 2
+           return V
+        }
+    }
+    let chunhat = new Rectangle( 12, 4)
+    console.log(chunhat.chieuDai)
+    console.log(chunhat.chieuRong)
+     console.log (chunhat.dienTich())
+    console.log (chunhat.chuVi())
+
+</script>
+
+</body>
+</html>

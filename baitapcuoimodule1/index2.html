@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    // Viết hàm tryRemoveFromArray() nhận vào tham số là một mảng và một số nguyên index,
+    //     trả về mảng ban đầu đã được loại bỏ phần tử tại vị trí index nếu index hợp lệ.
+    //     Nếu index không hợp lệ, trả về mảng ban đầu.
+    // (không dùng hàm có sẵn để xóa mảng)
+    function tryRemoveFromArray( number, index ) {
+        let star = [];//1,2,
+        if ( index < 0 || index > number.length) {
+            return  number
+        }
+        for (let i = 0; i < number.length; i++) {//0,1,2,3
+            if (i != index) {
+                star [star.length] = number[i]//0,1,3
+            }
+        }
+        return star
+    }
+    console.log(tryRemoveFromArray([1, 2, 3, 4, 5, 6, 7, 8],2))
+
+</script>
+</body>
+</html>

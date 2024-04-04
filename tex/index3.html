@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <input type="number" id="number1" placeholder="số thứ nhất">
+    <input type="number" id="number2" placeholder=" số thứ hai">
+
+    <button onclick="cong()">cộng</button>
+    <button onclick="ketQua()">trừ</button>
+    <br>
+    <h3> result</h3>
+    <div>
+        <h3 id="result"> đây là kêt quả</h3>
+    </div></div>
+<br>
+
+<script>
+    function cong() {
+        let num1= +document.getElementById("number1").value;
+        let num2= +document.getElementById("number2").value;
+        let result= num1 + num2;
+
+        document.getElementById("result").innerHTML=+result;
+    }
+     function ketQua() {
+         let num1= +document.getElementById("number1").value;
+        let num2= +document.getElementById("number2").value;
+       let result2= num1 - num2;
+
+         document.getElementById("result").innerHTML=+result2;
+     }
+</script>
+</body>
+</html>

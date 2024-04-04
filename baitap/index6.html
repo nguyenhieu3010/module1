@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--// Hãy viết một chương trình để biểu diễn hình chữ nhật, với mô tả của lớp hình chữ nhật như sau:-->
+<!--//     Rectangle: Tên lớp-->
+<!--// -	x: Toạ độ x-->
+<!--// -	y: Toạ độ y-->
+<!--// -	width: Chiều rộng-->
+<!--// -	height: Chiều cao-->
+<!--// -	color: Màu sắc (sử dụng mã màu hex)-->
+<!--// +	render(canvas): Hiển thị hình chữ nhật trên một canvas-->
+<!--// Hãy thực hiện các thao tác theo kịch bản sau:-->
+<!--//     - Tạo một hình chữ nhật có tọa độ 10,10 và kích thước rộng 200, cao 100, màu-->
+<!--// - Hiển thị hình chữ nhật trên một canvas bằng cách sử dụng phương thức render-->
+
+<body>
+<canvas id="myCanvas"></canvas>
+<script>
+    class Rectangle {
+        constructor(x, y, width, height, color) {
+            this.x = x
+            this.y = y
+            this.width = width
+            this.height = height
+            this.color = color
+        }
+
+        render(canvas) {
+            let ctx = canvas.getContext("2d")
+            ctx.fillStyle = this.color
+            ctx.fillRect(this.x, this.y, this.width, this.height, this.color)
+        }
+    }
+
+    let tangle = new Rectangle(10, 10, 200, 100, "red")
+    let c = document.getElementById("myCanvas")
+    tangle.render(c)
+</script>
+
+</body>
+</html>

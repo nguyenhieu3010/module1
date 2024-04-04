@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--Viết hàm kiểm tra xem 1 chuỗi có nằm trong chuỗi còn lại không. -->
+<!--Với đầu vào là 2 chuỗi (str1,str2) trong đó sẽ kiểm tra str1 có nằm trong str2 không, -->
+<!--nếu có trả về true và ngược lại false. (không được dùng hàm có sẵn để tìm)-->
+<body>
+<script>
+    function soSanh(str1, str2) {
+        if (str1.length > str2.length) {
+            return false
+        }
+        for (let i = 0; i < str2.length - str1.length; i++) {
+            let fond = true
+            for (let j = 0; j < str1.length; j++) {
+                if (str1[j] !== str2[i + j]) {
+                    fond = false
+                    break
+                }
+            }
+            if (fond) {
+                return true
+            }
+        }
+        return false
+
+    }
+
+    console.log(soSanh("aec", "aabcg"))
+</script>
+</body>
+</html>

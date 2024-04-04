@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="display: flex;align-items: flex-end">
+    <div style="margin-right: 20px;">
+        <label>Amount</label>
+        <br>
+        <input type="text" id="amount">
+    </div>
+    <div style="margin-right: 20px;">
+        <label>From Currency</label>
+        <br>
+        <select id="from">
+            <option value="vn">Vietnam</option>
+            <option value=usd>Dollar</option>
+        </select>
+    </div>
+    <div style="margin-right: 20px;">
+        <label>To Currency</label>
+        <br>
+        <select id="to">
+            <option value="vn">Vietnam</option>
+            <option value=usd>Dollar</option>
+        </select>
+
+    </div>
+    <div style="margin-right: 20px;">
+        <button onclick="layDuLieu()">Convert
+        </button>
+    </div>
+    <br>
+</div>
+
+<div>
+    <h3 id="result"></h3>
+</div>
+<script>
+    function layDuLieu() {
+        let amount = document.getElementById('amount').value;
+        let from = document.getElementById('from').value;
+        let to = document.getElementById('to').value;
+        let result = 0;
+        if (from === 'vn') {
+            if (to === 'usd') {
+                result = amount / 24000;
+            } else {
+                result = amount;
+            }
+        } else {
+            if (to === 'vn') {
+                result = amount * 24000;
+            } else {
+                result = amount;
+            }
+        }
+
+        document.getElementById('result').innerText = "Result : " + result;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Câu lệnh switch-case</title>
+</head>
+<body>
+<h1>Kiểm tra số ngày trong tháng</h1>
+<input type="number" min="1" max="12" id="month" placeholder="chọn tháng" style="width: 200px">
+<button onclick="kiemTra()" id="kiemTra">chọn</button>
+<h3 id="tong"></h3>
+<script>
+    function kiemTra() {
+        let a = +document.getElementById("month").value;
+        let hh
+        document.getElementById("tong").innerHTML = a;
+        switch (a){
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 9:
+            case 11:
+                hh="tháng có 31 ngày"
+                break
+            case 2:hh="tháng 2 có 28 ngày"
+                break
+            case 4:
+            case 6:
+            case 8:
+            case 10:
+            case 12:
+                hh="tháng có 30 ngày"
+                break
+        }
+        document.getElementById("tong").innerHTML=hh
+    }
+</script>
+
+
+</body>
+</html>
